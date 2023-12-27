@@ -1,6 +1,10 @@
+<p>
+  <img src="assets/images/chat.png" width="350" title="hover text">
+</p>
+
 # chat_app
 
-A new Flutter project.
+Simple chat app with Flutter frontend.
 
 ## Getting Started
 
