@@ -1,5 +1,5 @@
 <p>
-  <img src="assets/images/chat.png" width="350" title="hover text">
+  <img src="assets/images/chat.png" width="350" title="logo">
 </p>
 
 # chat_app
