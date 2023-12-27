@@ -1,8 +1,16 @@
 import 'package:flutter/material.dart';
 
+import 'package:flutter_dotenv/flutter_dotenv.dart';
+import 'package:firebase_core/firebase_core.dart';
+
+import 'firebase_options.dart';
 import 'package:chat_app/screens/auth.dart';
 
-void main() {
+void main() async {
+  await dotenv.load(fileName: "local.env"); // Load environment variables first
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
   runApp(const MyApp());
 }
 
@@ -22,4 +30,3 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-
