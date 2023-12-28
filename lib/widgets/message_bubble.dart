@@ -56,11 +56,11 @@ class MessageBubble extends StatelessWidget {
                     const SizedBox(
                       height: 16,
                     ),
-                  if (username == null)
+                  if (username != null)
                     Padding(
                       padding: const EdgeInsets.only(left: 13, right: 13),
                       child: Text(
-                        username ?? '',
+                        username!,
                         style: const TextStyle(
                             fontWeight: FontWeight.bold, color: Colors.black54),
                       ),
